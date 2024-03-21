@@ -1,0 +1,5 @@
+.SH NAME
+shell \- a simple shell implementation
+
+.SH DESCRIPTION
+The Simple Shell command launches a simple shell implementation. It provides a command-line interface for executing commands and managing processes.
