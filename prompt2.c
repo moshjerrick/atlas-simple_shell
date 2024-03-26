@@ -67,5 +67,12 @@ char *read_line(void)
 
 void parse_line(char *line)
 {
+	if (strcmp(line, "exit\n") == 0)
+	{
+        exit(EXIT_SUCCESS);
+    }
+	else
+	{
 	printf("%s",  line);
+}
 }
