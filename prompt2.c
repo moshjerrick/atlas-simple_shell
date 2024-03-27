@@ -8,16 +8,19 @@ void shloop(void);
 char *read_line(void);
 void parse_line(char*);
 
-int main(int argc, char **argv)
+
+int main()
 {
     shloop();
     return 0;
 }
 
+
 void shloop(void)
 {
     char *line;
     int status = 1;
+
 
     while (status)
     {
@@ -33,29 +36,34 @@ void shloop(void)
     }
 }
 
+
 char *read_line(void)
 {
     char *line = NULL;
     size_t bufsize = 0;
-    if (getline(&line, &bufsize, stdin) == -1)
+    if (getline(&line, &bufsize, stdin) == EOF)
     {
-        return NULL;
+        exit(EXIT_SUCCESS);
     }
     return line;
 }
 
+
 void parse_line(char *line)
 {
-
+    pid_t pid;
     char *args[32];
     char *token = strtok(line, " \n");
     int i = 0;
+
+
     while (token != NULL && i < 31)
     {
         args[i++] = token;
         token = strtok(NULL, " \n");
     }
     args[i] = NULL;
+
 
     if (i > 0)
     {
@@ -82,7 +90,8 @@ void parse_line(char *line)
     }
 
 
-    pid_t pid = fork();
+   
+    pid = fork();
     if (pid < 0)
     {
         perror("fork failed");
@@ -101,3 +110,4 @@ void parse_line(char *line)
         wait(NULL);
     }
 }
+
