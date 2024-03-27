@@ -3,6 +3,8 @@
 ## Description
 The Simple Shell is a basic Unix shell implementation written in C programming language. This shell is developed as part of the curriculum at Atlas School to learn about system calls, processes, and other low-level programming concepts.
 
+The concepts we needed to learn in order to start coding our own shell includes: PID & PPID, getline() & strtok(), execve(), for(), wait(), and stat().
+
 ## Features
 - Executes commands entered by the user
 - Supports basic built-in commands like `cd` and `exit`
@@ -21,6 +23,8 @@ git clone https://github.com/moshjerrick/atlas-simple_shell
 gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh.
 
 3. Run the compiled executable to start the shell.
+
+./hsh
 
 4. Enter commands at the prompt and press Enter to execute them.
 
@@ -70,7 +74,11 @@ Here are some examples of commands you can use with the Simple Shell:
 ls
 cd
 mkdir
+pwd
+env
 
+## Exiting Shell
+To exit the shell: Type exit or Ctrl+D
 
 
 
