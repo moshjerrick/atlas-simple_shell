@@ -1,11 +1,54 @@
-## Images
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK5DHO13kpVfm4iiqn6wAdl_-8FQU4cKO-Xkq2DhGE5qWyuH2gtrdbTUPII5detET4k10&usqp=CAU">
 # Atlas Simple Shell
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK5DHO13kpVfm4iiqn6wAdl_-8FQU4cKO-Xkq2DhGE5qWyuH2gtrdbTUPII5detET4k10&usqp=CAU">
+
 
 ## Description
 The Simple Shell is a basic Unix shell implementation written in C programming language. This shell is developed as part of the curriculum at Atlas School to learn about system calls, processes, and other low-level programming concepts.
 
 The concepts we needed to learn in order to start coding our own shell includes: PID & PPID, getline() & strtok(), execve(), for(), wait(), and stat().
+
+## Fun Flow Chart!
+
+          +-------------------------+
+          |       Start Program     |
+          +------------+------------+
+                       |
+                       V
+          +-------------------------+
+          |        shloop()         |
+          +------------+------------+
+                       |
+                  +----+----+
+                  |         |
+                  V         |
+          +-----------------+---+
+          |   Print Shell Prompt |
+          +-----------------+---+
+                  |         |
+          +-------+---------+---+
+          |   Read User Input   |
+          +-----------------+---+
+                  |         |
+          +-------+---------+---+
+          |   Parse Input Line  |
+          +-----------------+---+
+                  |         |
+                  V         |
+          +-----------------+---+
+          |   Execute Command   |
+          +-----------------+---+
+                  |         |
+          +-------+---------+---+
+          |   Print Error Msg   |
+          +-----------------+---+
+                  |         |
+                  V         |
+          +-----------------+---+
+          |       Exit Program   |
+          +---------------------+
+
+
 
 ## Features
 - Executes commands entered by the user
