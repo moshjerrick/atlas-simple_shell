@@ -116,11 +116,13 @@ gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh.
 
 ## Usage
 Here are some examples of commands you can use with the Simple Shell:
-ls
-cd
-mkdir
-pwd
-env
+
+
+| ls    | list files in directory    |
+| cd    | change directory           |
+| mkdir | make directory             |
+| pwd   | print working display      |
+| env   | display current enviroment |
 
 ## Exiting Shell
 To exit the shell: Type exit or Ctrl+D
