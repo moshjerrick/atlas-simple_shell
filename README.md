@@ -117,7 +117,8 @@ gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh.
 ## Usage
 Here are some examples of commands you can use with the Simple Shell:
 
-
+| prompt | result |
+| ------- | ----------------|
 | ls | list files in directory |
 | cd | change directory |
 | mkdir | make directory |
