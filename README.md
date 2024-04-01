@@ -1,5 +1,5 @@
 ## Images
-<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets-global.website-files.com%2F6571f4826e9363343bcd2acd%2F65737bab80daf01df40b6a27_logo-atlas-school-blue.svg&tbnid=TIuhLuSFNWY9RM&vet=12ahUKEwja0en3w6GFAxW4w8kDHWUeA6MQMygBegQIARBo..i&imgrefurl=https%3A%2F%2Fwww.atlasschool.com%2F&docid=RcayfjY-EPbQcM&w=800&h=334&q=atlas%20school&client=firefox-b-1-d&ved=2ahUKEwja0en3w6GFAxW4w8kDHWUeA6MQMygBegQIARBo">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK5DHO13kpVfm4iiqn6wAdl_-8FQU4cKO-Xkq2DhGE5qWyuH2gtrdbTUPII5detET4k10&usqp=CAU">
 # Atlas Simple Shell
 
 ## Description
