@@ -8,14 +8,20 @@ void shloop(void);
 char *read_line(void);
 void parse_line(char*);
 
-
+/**
+ * main - function for prompt
+ * return: 0
+*/
 int main()
 {
     shloop();
     return 0;
 }
 
-
+/**
+ * shloop - prints character that prompts user to input a command
+ * Return: 0
+*/
 void shloop(void)
 {
     char *line;
@@ -38,7 +44,10 @@ void shloop(void)
     }
 }
 
-
+/**
+ * read_line - reads input line
+ * Return: line
+*/
 char *read_line(void)
 {
     char *line = NULL;
@@ -51,7 +60,11 @@ char *read_line(void)
     return line;
 }
 
-
+/**
+ * parse_line - break down a string into smaller components
+ * @line: pointer to line
+ * Return: 0
+*/
 void parse_line(char *line)
 {
     pid_t pid;
@@ -96,8 +109,6 @@ void parse_line(char *line)
         }
     }
 
-
-
     pid = fork();
     if (pid < 0)
     {
@@ -117,5 +128,3 @@ void parse_line(char *line)
         wait(NULL);
     }
 }
-
-
