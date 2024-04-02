@@ -56,14 +56,14 @@ void parse_line(char *line)
 {
     pid_t pid;
     char *args[32];
-    char *token = strtok(line, " \n");
+    char *token = strtok(line, " ");
     int i = 0;
 
 
     while (token != NULL && i < 31)
     {
         args[i++] = token;
-        token = strtok(NULL, " ");
+        token = strtok(NULL, " \n");
     }
     args[i] = NULL;
 
