@@ -71,6 +71,7 @@ void parse_line(char *line)
     {
         if (strcmp(args[0], "exit") == 0)
         {
+            free(token);
             exit(EXIT_SUCCESS);
         }
         else if (strcmp(args[0], "cd") == 0)
