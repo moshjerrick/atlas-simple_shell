@@ -1,14 +1,40 @@
+.TH SHELL 1 
 .SH NAME
-shell \- a simple shell implementation
-
+Shell \- a simple shell implementation that mimics a bash shell
+.SH SYNOPSIS
+.B Shell
+.RB [\-ls
+.IR list directory contents]
+.RB [\-cd
+.IR change the working directory]
+.RB [\-mkdir
+.IR make directory]
+.RB [\-echo
+.IR prints text to the terminal window]
+.RB [\-touch
+.IR creates a file]
+.RB [\-pwd
+.IR print working directory]
+.P
 .SH DESCRIPTION
-The Simple Shell command launches a simple shell implementation. It provides a command-line interface for executing commands and managing processes.
-
+.B Shell
+is a simple shell implementation that provides a command-line interface for executing commands and managing processes.
+.SH OPTIONS
+.TP
+.B \-ls-a
+does not ignore entries starting with .
+.B \-ls-l
+use long listing format
+.TP
+.B \-cd ..
+move back one directory
 .SH COMPILATION
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
-
-
-
+.SH BUGS
+No known bugs.
 .SH AUTHORS
-MOU CHANG
+.B
+MOU CHANG 
 JOSH MERRICK
+.SH COPYRIGHT
+.B GNU simple shell copyright
