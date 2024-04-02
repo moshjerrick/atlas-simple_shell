@@ -24,7 +24,9 @@ void shloop(void)
 
     while (status)
     {
-        printf("# ");
+        if(isatty(STDIN_FILENO)){
+            printf("# ");
+        }
         line = read_line();
         if (line == NULL)
         {
