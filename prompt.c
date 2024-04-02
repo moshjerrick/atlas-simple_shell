@@ -45,6 +45,7 @@ char *read_line(void)
     size_t bufsize = 0;
     if (getline(&line, &bufsize, stdin) == EOF)
     {
+        free(line);
         exit(EXIT_SUCCESS);
     }
     return line;
@@ -71,7 +72,6 @@ void parse_line(char *line)
     {
         if (strcmp(args[0], "exit") == 0)
         {
-            printf("OK");
             free(token);
             exit(EXIT_SUCCESS);
         }
