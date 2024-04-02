@@ -1,6 +1,6 @@
 .TH SHELL 1 
 .SH NAME
-Shell \- a simple shell implementation that mimics a bash shell
+Shell \- a simple shell implementation that mimics a unix shell. The shell is both interactive and non-interactive.
 .SH SYNOPSIS
 .B Shell
 .RB [\-ls
