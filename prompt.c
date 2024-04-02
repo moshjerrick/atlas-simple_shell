@@ -63,7 +63,7 @@ void parse_line(char *line)
     while (token != NULL && i < 31)
     {
         args[i++] = token;
-        token = strtok(NULL, " \n");
+        token = strtok(NULL, " ");
     }
     args[i] = NULL;
 
