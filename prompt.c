@@ -10,7 +10,7 @@ void parse_line(char*);
 
 /**
  * main - function for prompt
- * return: 0
+ * Return: 0
 */
 int main()
 {
