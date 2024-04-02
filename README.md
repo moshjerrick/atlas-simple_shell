@@ -69,7 +69,7 @@ gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh.
 
 3. Run the compiled executable to start the shell.
 
-./hsh
+./prompt
 
 4. Enter commands at the prompt and press Enter to execute them.
 
